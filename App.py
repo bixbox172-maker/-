@@ -14,7 +14,7 @@ if api_key:
     genai.configure(api_key=api_key)
     
     # ماڈل کی سیٹنگ (ہمیں Gemini 1.5 Pro یا Flash استعمال کرنا چاہیے جو بڑی فائلز پڑھ سکے)
-    model = genai.GenerativeModel('gemini-1.0-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     
     # 3. PDF اپ لوڈ کرنے کا آپشن
     uploaded_file = st.file_uploader("المعجم المفهرس کی PDF کتاب یہاں اپ لوڈ کریں", type=['pdf'])
